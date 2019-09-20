@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./javascript/newyorktimes.js"></script>
+
+</head>
+​
+​
+
+<body>
+    <div class=container-fluid style="padding-left: 15%; padding-right: 15%">
+        <div class="jumbotron" style="background-color: #20315A; color: white;">
+            <h1 class="display-4 text-center">&#9760 New York Times Search </h1>
+        </div>
+        ​
+        <div class="card">
+            <div class="card-header">
+                &#9760 Search Parameters
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    ​
+                    ​
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Search Term:</label>
+                            <input type="search" class="form-control" id="searchTerms">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                            <select class="form-control" id="numRecords">
+                                <option>1</option>
+                                <option>5</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Start Year (Optional)</label>
+                            <input type="email" class="form-control" id="startYears"
+                                placeholder="Begin date (e.g. 20120101)">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">End Year (Optional)</label>
+                            <input type="email" class="form-control" id="endYears"
+                                placeholder="End date (e.g. 20121231)">
+                        </div>
+                        <div>
+                            <input class="btn btn-primary" type="button" id="searchBtn" value="&#128269 Search">
+                            <button class="btn btn-primary" id="clearBtn" type="submit">&#128465 Clear Results</button>
+                        </div>
+                    </form>​
+                </blockquote>
+            </div>
+        </div>
+        ​
+        <div class="card">
+            <div class="card-header">
+                &#9760 Top Articles
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <div id="newsDiv"></div>
+                </blockquote>
+            </div>
+        </div>
+        <hr>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-text">
+                Made with lots and lots of &hearts;
+            </span>
+        </nav>
+    </div>
+    ​
+</body>
+​
+​
+
+</html>
